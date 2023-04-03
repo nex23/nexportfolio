@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+/*scroll on menu click*/
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .9s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*home section*/
+.home{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8),rgba(30, 35, 38, 1)), url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.home .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.home .contenido-banner .contenido-img img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.home .contenido-banner .content-img img{
+    padding: 8px;
+    margin-top: 50px;
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+.home .contenido-banner h1{
+    margin-top: 20px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.home .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.home .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition-property: outline-offset, outline-color, background-color;
+    transition: .5s;
+}
+.home .contenido-banner .redes:hover{
+    outline-offset: 4px;
+}
+.home .contenido-banner .redes i{
+    margin: auto;
+}
+.home .contenido-banner .redes:hover i{
+    animation: shake 0.25s;
+}
+.home .contenido-banner .icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+.home .contenido-banner .icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+.home .contenido-banner .icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+.home .contenido-banner .icon--facebook:hover {
+	background-color: #1977F3;
+	outline-color: #1977F3;
+}
+
+
+/*about section*/
+.about{
+    background-color: #2F3337;
+    color: #fff;
+    padding: 50px 20px;
+}
+.about .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.about h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.about .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.about .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.about .fila{
+    display: flex;
+}
+.about .fila .col{
+    width: 50%;
+}
+.about .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.about .fila .col ul{
+    list-style: none;
+}
+.about .fila .col ul li{
+    margin: 12px 0;
+}
+.about .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.about .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.about .fila .col ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.about .fila .col ul li a:hover{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.about .fila .col .contenedor-hobbies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .fila .col .contenedor-hobbies .hobbies{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.about .fila .col .contenedor-hobbies .hobbies:hover{
+    background-color: #1CB698;
+    cursor: pointer;
+}
+.about .fila .col .contenedor-hobbies .hobbies i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.about button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: .2s;
+}
+.about button:hover .overlay{
+    width: 100%;
+}
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 25px #7effb2, 0 0 50px #2cd9ff;
+    }
+}
+.about button:focus {
+    animation: pulse 0.5s ease-in-out;
+}
+/*skills section*/
+.skills{
+    background-color: #393d41;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-skills{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .skill-bar{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progress{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .skill-bar span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .nodejs{
+    width: 0%;
+    animation: 2s nodejs forwards;
+}
+@keyframes nodejs {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+.skills .skill .hacking{
+    width: 0%;
+    animation: 2s hacking forwards;
+}
+@keyframes hacking {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .comunication{
+    width: 0%;
+    animation: 2s comunication forwards;
+}
+@keyframes comunication {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .teamwork{
+    width: 0%;
+    animation: 2s teamwork forwards;
+}
+@keyframes teamwork {
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+.skills .skill .creativity{
+    width: 0%;
+    animation: 2s creativity forwards;
+}
+@keyframes creativity {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .crisism{
+    width: 0%;
+    animation: 2s crisism forwards;
+}
+@keyframes crisism {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .dataa{
+    width: 0%;
+    animation: 2s dataa forwards;
+}
+@keyframes dataa {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+/*Portfolio Section*/
+.portfolio{
+    background-color: #2F3337;
+    color: #fff;
+    padding: 50px 20px;    
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio .contenido-seccion h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .gallery .project{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .gallery .project img{
+    width: 100%;
+    display: block;
+}
+.portfolio .gallery .project .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,128,152,.8), rgba(28,128,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .gallery .project .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .gallery .project .overlay:hover{
+    opacity: 80%;
+}
+.portfolio .gallery .project .overlay:hover h3{
+    margin-bottom: 0;
+}
+.portfolio .gallery .project .overlay a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+.portfolio .gallery .project .overlay a:hover{    
+    font-size: 20px;
+}
+
+/*Contact Section*/
+.contact{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contact .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contact h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+}
+.contact .col{
+    max-width: 100%;
+    height: 50%;
+    padding: 100px;
+    position: relative;
+}
+.contact button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contact button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contact button:hover .overlay{
+    width: 100%;
+}
+.contact .col .info{
+    position:relative;
+    top: 60px;
+    background-color: #252A2E;
+    padding: 30px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact .col .info ul{
+    list-style: none;
+}
+.contact .col .info ul li{
+    margin-bottom: 20px;
+}
+.contact .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+.contact .col .info ul li a{
+    text-decoration: none;
+    color: #1CB698;
+}
+.contact .col .info ul li a:hover{
+    color: aquamarine;
+}
+
+/*Footer Section*/
+footer{
+    background-color: #393d41;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition-property: outline-offset, outline-color, background-color;
+    transition: .5s;
+}
+footer .redes a:hover{
+    background-color: #1CB698;
+}
+footer .redes:hover{
+    outline-offset: 4px;
+}
+footer .redes i{
+    margin: auto;
+}
+footer .redes:hover i{
+    animation: shake 0.25s;
+}
+footer .redes .icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+}
+footer .redes .icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+}
+footer .redes .icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+}
+footer .redes .icon--facebook:hover {
+	background-color: #1977F3;
+	outline-color: #1977F3;
+}
+
+footer .up{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+footer .up:hover{
+    background-color: #fff;
+    color: #1CB698;
+}
+
+/*Responsive Section*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .about .fila{
+        display: block;
+    }
+    .about .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .skill-bar{
+        width: 100%;
+    }
+    .portfolio .gallery{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .gallery .project{
+        max-width: 100%;
+    }
+    .portfolio .gallery .project img{
+        width: 100%;
+    }
+    .contact .fila{
+        display: block;
+    }
+    .contact .fila .col{
+        width: 100%;        
+    }
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/iconhg.png">
+    <title>Portfolio-Nex</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<!--menu/header-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">NEX</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#about" onclick="select()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+<!--home section-->
+    <section id="home" class="home">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="https://hugonex.com/img/nex.jpg" alt="">
+            </div>
+            <div class="content-img">
+                <img src="https://hugonex.com/img/iconhg.png" alt="">
+            </div>
+            <h1>HUGO ACOSTA</h1>
+            <h2>Computer Engineer - Web Developer</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/hgnex" target="_blank" class="icon icon--facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/nex23" target="_blank" class="icon icon--twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hnex23/" target="_blank" class="icon icon--instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nex23/" target="_blank" class="icon icon--linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!--about section-->
+    <section id="about" class="about">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hi! I'm Hugo Acosta (NEX):</span> Christian, Web developer, coffee addict, novice drummer, guitarist because of free time, lover of good books, white hacker, computer engineer with 10 years of experience, undergraduate and postgraduate teacher.</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Personal Info</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            January 13th
+                        </li>
+                        <li>
+                            <strong>Phone Number</strong>
+                            +591-67554747
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <a href="mailto:yo@hugonex.com">yo@hugonex.com</a>
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            <a href="https://hugonex.com" target="_blank">hugonex.com</a>
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            4360 Santa Cruz, Bolivia
+                        </li>
+                        <li>
+                            <strong>Work</strong>
+                            <span>Freelancer</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-hobbies">
+                        <div class="hobbies">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <span>COFFEE</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>BASQUET</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTOS</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+<!--skills section-->
+<section id="skills" class="skills">
+    <div class="contenido-skills">
+        <h2>Skills</h2>
+        <div class="fila">
+        <!--technical skills-->
+        <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+                <span>Javascript</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>85%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>90%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>NodeJS</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>65%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>WordPress</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Hacking</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--professional skills-->
+        <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+                <span>Comunication</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Teamwork</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>88%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Creativity</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>75%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Crisis Management</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Data Analysis</span>
+                <div class="skill-bar">
+                    <div class="progress">
+                        <span>60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!--portfolio section-->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <div class="project">
+                <img src="img/i1.jpg" alt="">
+                <div class="overlay">
+                    <h3>Tienda Virtual</h3>
+                    <a href="https://tiendagamer.com.bo/" target="_blank">TiendaGamer.com.bo</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/i2.jpg" alt="">
+                <div class="overlay">
+                    <h3>Sitio Web</h3>
+                    <a href="https://cepad.org/" target="_blank">Cepad.org</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/i3.jpg" alt="">
+                <div class="overlay">
+                    <h3>App Móvil</h3>
+                    <a href="https://play.google.com/store/apps/details?id=com.soe_ficct.app">SOE FICCT - App Móvil</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/i4.jpg" alt="">
+                <div class="overlay">
+                    <h3>App Móvil</h3>
+                    <a href="https://play.google.com/store/apps/details?id=com.hugo.acv">ACV12 - App Móvil</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/i5.jpg" alt="">
+                <div class="overlay">
+                    <h3>Sitio Web</h3>
+                    <a href="https://actioncenter.org.bo/" target="_blank">ActionCenter.org.bo</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/i6.jpg" alt="">
+                <div class="overlay">
+                    <h3>Sitio Web</h3>
+                    <a href="https://www.festivaldelaorquidea.com/" target="_blank">FestivalDeLaOrquidea.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact section-->
+<section id="contact" class="contact">
+    <div class="contenido-seccion">
+        <h2>Contact</h2>
+            <div class="col">
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Santa Cruz, Bolivia
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Phone: +591-67554747
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Whatsapp: <a href="https://wa.me/+59167554747" target="_blank">+591-67554747</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: <a href="mailto:yo@hugonex.com" target="_blank">yo@hugonex.com</a>
+                    </li>
+                </ul>                
+            </div>
+            </div>
+    </div>
+</section>
+
+<!--footer section-->
+<footer>
+    <a href="#home" class="up"><i class="fa-solid fa-angles-up"></i></a>
+    <div class="redes">        
+        <a href="https://www.facebook.com/hgnex" target="_blank" class="icon icon--facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nex23" target="_blank" class="icon icon--twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hnex23/" target="_blank" class="icon icon--instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nex23/" target="_blank" class="icon icon--linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <p>Hugo Nex - 2023</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
