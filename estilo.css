@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
-*{
+body{
     box-sizing: border-box;
     font-family: 'Work Sans';
     margin: 0;
@@ -36,7 +36,7 @@ html{
     list-style: none;
 }
 .contenedor-header header nav ul li a{
-    text-align: none;
+    text-align: center;
     color: #fff;
     margin: 0 15px;
     padding: 3px;
@@ -91,6 +91,25 @@ html{
     margin-top: 20px;
     font-size: 42px;
     font-family: 'Righteous';
+    animation-name: changeColor;
+    animation-duration: 3s;
+}
+@keyframes changeColor{
+    0%{
+        color: #2cd9ff;
+    }
+    25%{
+        color: #7effb2;
+    }
+    50%{
+        color: #1CB698;
+    }
+    75%{
+        color: #2cd9ff;
+    }
+    100%{
+        color: white;
+    }
 }
 .home .contenido-banner h2{
     font-size: 15px;
@@ -418,12 +437,6 @@ html{
     margin: auto;
 }
 .portfolio .contenido-seccion h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.portfolio h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
